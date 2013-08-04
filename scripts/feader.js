@@ -6,6 +6,8 @@ FDR.Feader = function(){
 	var feedList;
 	var loadingCount = 0;
 	
+	var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+	
 	var settings = {
 		showSnippet: false,
 		removeOnClose: false,
@@ -198,10 +200,6 @@ FDR.Feader = function(){
 
 		}
 		
-		self.localDate = ko.computed(function(){
-			return new Date(self.entry.publishedDate).toLocaleString();
-		});
-
 		self.showIsRead = ko.computed(function(){
 			return (self.isRead() && self.viewState() === 0);
 		});
@@ -234,6 +232,12 @@ FDR.Feader = function(){
 
 		};
 		
+		self.localDate = ko.computed(function(){
+		   function padZero(val){return (val.length == 1 ? '0' + val : val )}
+		   var dt = new Date(self.entry.publishedDate);
+			return days[dt.getDay()] + " " + dt.getMonth() + "/" + dt.getDate() + " " + padZero(String(dt.getHours())) + ":" + padZero(String(dt.getMinutes()));
+		});
+		
 		self.toggleSelected = function(){
 			self.isSelected(!self.isSelected());
 		}
@@ -241,6 +245,8 @@ FDR.Feader = function(){
 
 
 	}
+	
+	
 	
 	
 }();

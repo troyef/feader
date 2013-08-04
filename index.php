@@ -147,8 +147,10 @@ require 'Config.php';
 							<i class="icon-trash" data-bind="click: removeEntry "></i>
 							<!--<i class="icon-star" data-bind=" "></i>-->
 							<i class="icon-repeat" data-bind="click: markUnread "></i>
+							<div class="smEntryDate" data-bind="text: localDate"></div>
 						
 						</div>
+						<div class="entryDate" data-bind="text: localDate"></div>
 					
 						<div class="left_gutter ">
 							<div class="save_marker" data-bind="css: { 'icon-check': isSelected }, click: toggleSelected "></div>
@@ -159,7 +161,7 @@ require 'Config.php';
 							<div class="entrytitle " data-bind='click: toggleView'>
 								<span class="entryName" data-bind="text: entry.title"></span>
 								<span class="entrySnip" data-bind="text: entry.contentSnippet, visible: viewSnippet"></span>
-								<span class="entryDate" data-bind="text: localDate"></span>
+								
 							</div>
 						
 							<div class="content" data-bind='html: entry.content, visible: viewContent'></div>

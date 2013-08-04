@@ -17,7 +17,7 @@ header {height:22px;background-color:$shade;padding: 3px 40px;
 
 	@media screen and (max-width: 768px){padding:3px 20px;}
 	@media screen and (max-width: 480px){padding:3px 10px;}
-	@media screen and (max-width: 360px){padding:3px;}
+	@media screen and (max-width: 360px){padding:3px 5px;}
 
 	.logo {float:left;line-height:22px;font-weight:bold;}
 
@@ -88,7 +88,7 @@ header {height:22px;background-color:$shade;padding: 3px 40px;
 	
 	@media screen and (max-width: 768px){margin:0 20px;}
 	@media screen and (max-width: 480px){margin:0 10px;}
-	@media screen and (max-width: 360px){margin:0 3px;}
+	@media screen and (max-width: 360px){margin:0 5px;}
 	
 	.info_div {position:relative;top:13px;line-height:15px;font-size:.9em;margin-left:5px;}
 
@@ -110,7 +110,7 @@ header {height:22px;background-color:$shade;padding: 3px 40px;
 	
 	@media screen and (max-width: 768px){margin:0 20px;}
 	@media screen and (max-width: 480px){margin:0 10px;}
-	@media screen and (max-width:360px){margin:0 3px;}
+	@media screen and (max-width:360px){margin:0 5px;}
 	
 
 	.entry {border-bottom:1px solid #DDD;
@@ -120,7 +120,7 @@ header {height:22px;background-color:$shade;padding: 3px 40px;
 		
 		div {position:relative;}
 	
-		.left_gutter {float:left;width:35px;z-index:6;
+		.left_gutter {float:left;width:25px;z-index:6;
 		
 			.save_marker{position:absolute;left:1px;top:3px;height:8px;width:8px;
 				border:1px dashed $borders;
@@ -131,20 +131,28 @@ header {height:22px;background-color:$shade;padding: 3px 40px;
 			i {margin-left:15px;}
 		}
 
-		.right_gutter {float:right;min-width:100px;text-align:right;
+		.right_gutter {float:right;text-align:right;margin-left:15px;
 			font-size:.8em;z-index:6;
 			
 			a, a:hover, a:visited {text-decoration:none;}
 			i {margin:1px 3px 0;}
+			
+			.smEntryDate {display:none;color:#898989;
+				@media screen and (max-width: 768px){display:block;}
+			}
+		}
+		.entryDate {float:right;font-weight:normal;color:#898989;font-size:.9em;
+
+			@media screen and (max-width: 768px){display:none;}
 		}
 		
-		.entry_content{margin-left:35px;
+		.entry_content{margin-left:25px;
 
 			.feedname {float:left;min-width:150px;padding-right:10px;color:#898989;
 				font-size:.9em;
 			}
 	
-			.entrytitle {z-index:5;cursor:pointer;
+			.entrytitle {z-index:5;cursor:pointer;float:left;
 				font-weight:bold;font-size:.9em;
 			
 				.entryName {}

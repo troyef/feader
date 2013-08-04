@@ -557,7 +557,7 @@ header {
       padding: 3px 10px; } }
   @media screen and (max-width: 360px) {
     header {
-      padding: 3px; } }
+      padding: 3px 5px; } }
   header .logo {
     float: left;
     line-height: 22px;
@@ -676,7 +676,7 @@ header {
       margin: 0 10px; } }
   @media screen and (max-width: 360px) {
     .feedHead {
-      margin: 0 3px; } }
+      margin: 0 5px; } }
   .feedHead .info_div {
     position: relative;
     top: 13px;
@@ -713,7 +713,7 @@ header {
       margin: 0 10px; } }
   @media screen and (max-width: 360px) {
     .feedContainer {
-      margin: 0 3px; } }
+      margin: 0 5px; } }
   .feedContainer .entry {
     border-bottom: 1px solid #DDD;
     padding: 3px 0; }
@@ -723,7 +723,7 @@ header {
       position: relative; }
     .feedContainer .entry .left_gutter {
       float: left;
-      width: 35px;
+      width: 25px;
       z-index: 6; }
       .feedContainer .entry .left_gutter .save_marker {
         position: absolute;
@@ -743,16 +743,30 @@ header {
         margin-left: 15px; }
     .feedContainer .entry .right_gutter {
       float: right;
-      min-width: 100px;
       text-align: right;
+      margin-left: 15px;
       font-size: .8em;
       z-index: 6; }
       .feedContainer .entry .right_gutter a, .feedContainer .entry .right_gutter a:hover, .feedContainer .entry .right_gutter a:visited {
         text-decoration: none; }
       .feedContainer .entry .right_gutter i {
         margin: 1px 3px 0; }
+      .feedContainer .entry .right_gutter .smEntryDate {
+        display: none;
+        color: #898989; }
+        @media screen and (max-width: 768px) {
+          .feedContainer .entry .right_gutter .smEntryDate {
+            display: block; } }
+    .feedContainer .entry .entryDate {
+      float: right;
+      font-weight: normal;
+      color: #898989;
+      font-size: .9em; }
+      @media screen and (max-width: 768px) {
+        .feedContainer .entry .entryDate {
+          display: none; } }
     .feedContainer .entry .entry_content {
-      margin-left: 35px; }
+      margin-left: 25px; }
       .feedContainer .entry .entry_content .feedname {
         float: left;
         min-width: 150px;
@@ -762,6 +776,7 @@ header {
       .feedContainer .entry .entry_content .entrytitle {
         z-index: 5;
         cursor: pointer;
+        float: left;
         font-weight: bold;
         font-size: .9em; }
         .feedContainer .entry .entry_content .entrytitle .entrySnip {
