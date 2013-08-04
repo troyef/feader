@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-require 'src/Config.php';
+require '../Config.php';
 
 
 $app = new \Slim\Slim();

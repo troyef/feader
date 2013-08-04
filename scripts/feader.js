@@ -14,7 +14,7 @@ FDR.Feader = function(){
 	};
 	
 	function InitFeader(userId){
-		FDR.ApiService = FDRApiService();
+		FDR.ApiService = FDRApiService(FDR.serviceUrl);
 		FDR.ApiService.CheckUser(userId, onSuccess,onProblem);
 		
 		

@@ -1,3 +1,7 @@
+<?php
+require 'Config.php';
+
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,6 +11,10 @@
 		<link rel="stylesheet" type="text/css" href="css/tbase.css"/>
 		<link rel="stylesheet" type="text/css" href="css/tgrid.css"/>
 		<link rel="stylesheet" type="text/css" href="css/feader.css"/>
+		<script>
+			var FDR = FDR || {};
+			FDR.serviceUrl = "<?php echo $CFG->serviceUrl; ?>";
+		</script>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="scripts/bootstrap.min.js"></script>

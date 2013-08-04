@@ -1,8 +1,8 @@
-FDRApiService = function(){
+FDRApiService = function(serviceUrl){
 	
 	var _userId = "";
 	var _returnType = "json";
-	var _serviceUrl = "http://localhost/sites/feader/api/";
+	var _serviceUrl = serviceUrl;
 	
 	return {
 		CheckUser: function(vendorId,success,error){
