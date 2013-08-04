@@ -39,7 +39,12 @@ header {height:22px;background-color:$shade;padding: 3px 40px;
 	}
 }
 
-#feeds {display:none;position:relative;height:100%;
+#unknownUser {display:none;margin:100px auto; text-align:center;width:60%;
+	font-size:1.2em;
+
+}
+
+#feeds {position:relative;height:100%;
 	
 	.screenBlanket{position:absolute;height:100%;width:100%;@include opacity(.9);background-color:#888;z-index:10;}
 

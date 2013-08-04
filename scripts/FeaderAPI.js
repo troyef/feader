@@ -10,9 +10,9 @@ FDRApiService = function(serviceUrl){
 			var params = {vendorid:vendorId};
 			
 			function onSuccess(data){
-				_userId = data.id;
+			   _userId = data.id;
 				success.call(this,data)
-			}
+		   }
 			
 			makeRequest(callTarget, params, true, _returnType, onSuccess, error);
 			

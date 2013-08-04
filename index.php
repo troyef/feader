@@ -50,7 +50,7 @@ require 'Config.php';
 						$(".avatar").attr('src',resp.image.url.replace("sz=50","sz=22")).show();
 					}
 					$("#login").hide();
-					$("#feeds").show();
+					
 				
 					FDR.Feader.InitFeader(resp.id);
 					
@@ -102,7 +102,13 @@ require 'Config.php';
 			
 		</section>
 		
-		<section id="feeds">
+		<section id="unknownUser">
+			<div class="">
+				Hmmm... we don't know you in the feader system. If you would like to fix that, send an email to info at tefworks dot com and we'll see what we can do.  Cheers!
+			</div>
+		</section>
+		
+		<section id="feeds" data-bind="visible: userKnown">
 			<div class="screenBlanket" data-bind="visible: blanketScreen"></div>
 			<div class="feedAddDiv" data-bind="visible: showAddFeed, keyupBubble:false">
 				<div class="feedAdd">

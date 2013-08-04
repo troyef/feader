@@ -3,6 +3,8 @@ var FDR = FDR || {};
 FDR.viewModel = function(){
 	var self = this;
 	
+	self.userKnown = ko.observable(false);
+	
 	self.loadFeeds;
 	self.showSnippet;
 	self.removeOnClose;

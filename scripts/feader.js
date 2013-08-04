@@ -19,11 +19,18 @@ FDR.Feader = function(){
 		
 		
 		function onSuccess(data){
-			FDR.viewModel.applySettings(data);
+		   if (data.id != null){
+		      FDR.viewModel.userKnown(true);
+		      FDR.viewModel.applySettings(data);
 			
-			FDR.ApiService.GetFeeds(loadFeedList);
-			//FDR.ApiService.GetSettings(loadFeeds);
-
+			   loadingCount++;
+      		loadingToggle();
+			
+   			FDR.ApiService.GetFeeds(loadFeedList);
+   			//FDR.ApiService.GetSettings(loadFeeds);
+         } else {
+            $('#unknownUser').show();
+         }
 			
 		}
 		
@@ -49,6 +56,7 @@ FDR.Feader = function(){
 	
 	
 	function loadFeedList(_feedList){
+	   loadingCount--;
 		feedList = _feedList;
 		FDR.viewModel.loadFeeds = loadFeeds;
 		loadFeeds();

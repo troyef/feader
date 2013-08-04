@@ -573,8 +573,14 @@ header {
     font-size: 1.3em;
     vertical-align: top; }
 
-#feeds {
+#unknownUser {
   display: none;
+  margin: 100px auto;
+  text-align: center;
+  width: 60%;
+  font-size: 1.2em; }
+
+#feeds {
   position: relative;
   height: 100%; }
   #feeds .screenBlanket {
