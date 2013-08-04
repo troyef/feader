@@ -1,0 +1,66 @@
+/*  utils.scss  */
+
+@mixin rounded($radius: 10px) {
+	-ms-border-radius:$radius; // IE10+
+  	-o-border-radius:$radius; // Opera
+  	-moz-border-radius:$radius; // Firefox
+  	-webkit-border-radius:$radius; // Webkit (Safari, Chrome, other)
+  	border-radius:$radius;
+}
+
+@mixin gradient($from, $to) {
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+  background: -moz-linear-gradient(top,  $from, $to);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+}
+
+
+@mixin drop-shadow($color:#000, $blur:0, $x:0, $y:0) { // color, blur, x, y
+  -ms-box-shadow:$x $y $blur $color; // IE10+
+  @if ($x == 0 and $y == 0) { // non directional glow
+    filter: Glow(color=#{ie-hex-str($color)},strength=#{numericvalue($blur)});
+    -ms-filter: glow(color=#{ie-hex-str($color)},strength=#{numericvalue($blur)});
+  } @else {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=#{numericvalue($blur)}, Direction=#{degrees($x, $y)}, Color='#{ie-hex-str($color)}')"; // IE8
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=#{numericvalue($blur)}, Direction=#{degrees($x, $y)}, Color='#{ie-hex-str($color)}'); // IE7-
+  }
+  -o-box-shadow:$x $y $blur $color; // Opera
+  -moz-box-shadow:$x $y $blur $color; // Firefox
+  -webkit-box-shadow:$x $y $blur $color; // Webkit (Safari, Chrome, other)
+  box-shadow:$x $y $blur $color;
+}
+
+@mixin rotate($degrees) {
+	-moz-transform: rotate(#{$degrees}deg);  /* FF3.5+ */
+	-o-transform: rotate(#{$degrees}deg);  /* Opera 10.5 */
+	-webkit-transform: rotate(#{$degrees}deg);  /* Saf3.1+, Chrome */
+	-ms-transform: rotate(#{$degrees}deg);  /* IE9 */
+	transform: rotate(#{$degrees}deg);
+}
+
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+         (-o-min-device-pixel-ratio: 2.6/2),
+         (-webkit-min-device-pixel-ratio: 1.3),
+         (min-device-pixel-ratio: 1.3),
+         (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+@mixin opacity ( $value: 0.5 ) {
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" $value * 100 ")";
+  filter: alpha(opacity= $value * 100 );
+  zoom: 1;
+}
+
+@mixin rotated ($deg:180){
+	webkit-transform: rotate($deg"deg");
+	-moz-transform: rotate($deg"deg");
+	-ms-transform: rotate($deg"deg");
+	-o-transform: rotate($deg"deg");
+	transform: rotate($deg"deg");
+}

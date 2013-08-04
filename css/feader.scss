@@ -1,0 +1,177 @@
+@import 'tUtils';
+@import 'sprites.scss';
+@import 'tooltip.scss';
+
+$linkColor:#4194FB;
+$linkColorHover: darken($linkColor, 15%);
+$borders: #DDD;
+$shade:#EEE;
+
+html{height:100%;}
+body {color:#333;height:100%;}
+
+a,.link {color:$linkColor;cursor:pointer;}
+a:hover, .link:hover, a:focus { color:$linkColorHover;text-decoration:underline;}
+
+header {height:22px;background-color:$shade;padding: 3px 40px;
+
+	.logo {float:left;line-height:22px;font-weight:bold;}
+
+	.user_info{line-height:22px;
+	
+		.user_name {display:none;float:right;font-size:.9em;}
+		
+		.avatar {display:none;float:right;margin-left:5px;border:1px solid $borders;}
+		
+		#signinButton {}
+	
+	}
+
+
+}
+
+#login {
+	.loginDialog {margin-top:100px; text-align:center;
+		
+		
+		.loginTxt {line-height:37px;font-size:1.3em;vertical-align:top;}
+		
+	}
+}
+
+#feeds {display:none;position:relative;height:100%;
+	
+	.screenBlanket{position:absolute;height:100%;width:100%;@include opacity(.9);background-color:#888;z-index:10;}
+
+	.feedAddDiv{position:absolute;top:20px;width:100%;z-index:15;
+
+		.feedAdd {margin:0 auto;width:400px;padding:20px 20px 30px;position:relative;
+			@include rounded(5px);border:2px solid #FFF;
+			background-color:$shade;
+			line-height:25px;
+			
+			.cancelBtn {position:absolute;right:5px;top:5px;width:14px;height:14px;line-height:normal;}
+			
+			input {width:250px;@include rounded(3px);}
+			
+			.head-button{top:1px;margin-left:10px;}
+			
+			.addFeedMessage{font-size:1.1em;font-weight:bold;margin-top:10px;}
+		
+		}
+	
+	}
+
+
+}
+
+.head-button {display:inline;padding:2px 3px; border:1px solid $borders;position: relative;top: 9px;
+	@include gradient(#EEE,#CCC);
+	@include rounded(3px);
+	
+	&:hover {@include gradient(#CCC,#EEE);}
+	
+	&.right {margin-left:5px;}
+	&.left {margin-right:5px;}
+}
+
+.feedHead {margin:0 40px;height:35px;
+	
+	
+	.info_div {position:relative;top:13px;line-height:15px;font-size:.9em;margin-left:5px;}
+
+	.loading {display:none;margin:0 auto;
+		background-color:transparentize($linkColor,.5);
+	    height: 20px;
+	    position: relative;top: 9px;
+	    text-align: center;
+	    width: 100px;
+		@include rounded(3px);
+		line-height:20px;
+		font-size:.9em;
+	}
+
+}
+
+.feedContainer{margin:0 40px;border-top:1px solid $borders;border-bottom:1px solid $borders;
+	margin-bottom:50px;
+
+	.entry {border-bottom:1px solid #DDD;
+		padding:3px 0;
+		
+		&.isread{background-color:#EFEFEF;}
+		
+		div {position:relative;}
+	
+		.left_gutter {float:left;width:35px;z-index:6;
+		
+			.save_marker{position:absolute;left:1px;top:3px;height:8px;width:8px;
+				border:1px dashed $borders;
+				background-color:#FFF;
+				
+				&.icon-check {left:0;top:0px;height:14px;width:14px;border:none;}
+			}
+			i {margin-left:15px;}
+		}
+
+		.right_gutter {float:right;min-width:100px;text-align:right;
+			font-size:.8em;z-index:6;
+			
+			a, a:hover, a:visited {text-decoration:none;}
+			i {margin:1px 3px 0;}
+		}
+		
+		.entry_content{margin-left:35px;
+
+			.feedname {float:left;min-width:150px;padding-right:10px;color:#898989;
+				font-size:.9em;
+			}
+	
+			.entrytitle {z-index:5;cursor:pointer;
+				font-weight:bold;font-size:.9em;
+			
+				.entryName {}
+				
+				.entrySnip {font-weight:normal;margin-left:5px;}
+				
+				.entryDate {font-weight:normal;margin-left:15px;color:#898989;font-size:.9em;}
+			}
+		
+			.snippet {padding:10px 10%;
+				clear:left;
+			}
+			
+			.content {margin:20px 10% 0; padding:20px 5px;
+				clear:left;
+				background-color:#FFF;
+			}
+			
+			.icon-chevron-up {position:absolute;bottom:0;right:0;}
+		
+		}
+		
+		
+		
+
+	}
+
+}
+
+.no_feeds {text-align:center;margin-top:50px;font-size:1.2em;}
+
+footer {position:fixed;bottom:0;left:0;width:100%;height:20px;z-index:10;
+	padding:3px 0;
+	background-color:transparentize(#EEE,.2);
+	line-height:20px;
+	font-size:.8em;
+	color:#333;
+	
+	.right_area {float:right;margin-right:40px;}
+	
+	.left_area {float:left;margin-left:40px;
+	
+		.left {margin-right:10px;}
+	}
+
+
+}

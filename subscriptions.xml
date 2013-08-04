@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>Troy subscriptions in Google Reader</title>
+    </head>
+    <body>
+        <outline text="1001 rules for my unborn son"
+            title="1001 rules for my unborn son" type="rss"
+            xmlUrl="http://rulesformyunbornson.tumblr.com/rss" htmlUrl="http://rulesformyunbornson.tumblr.com/"/>
+        <outline
+            text="Cool Springs Brewery | Great Food Including New-York-Style Pizzas | Craft Beer Brewed on Premises | LIVE Entertainment | Good ..."
+            title="Cool Springs Brewery | Great Food Including New-York-Style Pizzas | Craft Beer Brewed on Premises | LIVE Entertainment | Good ..."
+            type="rss"
+            xmlUrl="http://www.coolspringsbrewery.com/index.php?format=feed&amp;amp;type=rss" htmlUrl="http://www.coolspringsbrewery.com/component/content/frontpage.html"/>
+        <outline text="David Friedman Photography: Blog"
+            title="David Friedman Photography: Blog" type="rss"
+            xmlUrl="http://www.davidfriedmanphoto.com/blog/index.xml" htmlUrl="http://www.davidfriedmanphoto.com/blog/"/>
+        <outline text="Dixie Downturn" title="Dixie Downturn" type="rss"
+            xmlUrl="http://dixiedownturn.com/feed/" htmlUrl="http://dixiedownturn.com"/>
+        <outline
+            text="East Nashville, With LoveEast Nashville, With Love | News, culture, food, life, from East Nashville, with love."
+            title="East Nashville, With LoveEast Nashville, With Love | News, culture, food, life, from East Nashville, with love."
+            type="rss" xmlUrl="http://eastnashvillewithlove.com/feed/" htmlUrl="http://eastnashvillewithlove.com"/>
+        <outline text="East Nasty" title="East Nasty" type="rss"
+            xmlUrl="http://eastnastyforlife.com/feed/" htmlUrl="http://eastnastyforlife.com"/>
+        <outline text="Emil Erwin" title="Emil Erwin" type="rss"
+            xmlUrl="http://emilerwin.blogspot.com/feeds/posts/default" htmlUrl="http://emilerwin.blogspot.com/"/>
+        <outline text="Fly South - Fly Fishing &amp; Ge..."
+            title="Fly South - Fly Fishing &amp; Ge..." type="rss"
+            xmlUrl="http://flysouth.net/feed/" htmlUrl="http://flysouth.net"/>
+        <outline text="Grain &amp; Gram" title="Grain &amp; Gram"
+            type="rss" xmlUrl="http://grainandgram.com/blog/?feed=rss2" htmlUrl="http://grainandgram.com/blog"/>
+        <outline text="Humble Oven" title="Humble Oven" type="rss"
+            xmlUrl="http://humbleoven.blogspot.com/feeds/posts/default" htmlUrl="http://humbleoven.blogspot.com/"/>
+        <outline text="My Little Gentleman" title="My Little Gentleman"
+            type="rss" xmlUrl="http://mylittlegentleman.tumblr.com/rss" htmlUrl="http://my-little-gentleman.com/"/>
+        <outline text="Nashville Rail Riders"
+            title="Nashville Rail Riders" type="rss"
+            xmlUrl="http://railnashville.blogspot.com/feeds/posts/default" htmlUrl="http://railnashville.blogspot.com/"/>
+        <outline text="Olive &amp; Sinclair Chocolate Co."
+            title="Olive &amp; Sinclair Chocolate Co." type="rss"
+            xmlUrl="http://oliveandsinclair.blogspot.com/feeds/posts/default" htmlUrl="http://oliveandsinclair.blogspot.com/"/>
+        <outline text="Relay Room" title="Relay Room" type="rss"
+            xmlUrl="http://www.relayroom.com/feed/rss" htmlUrl="http://www.relayroom.com"/>
+        <outline text="See Jack bike." title="See Jack bike." type="rss"
+            xmlUrl="http://www.seejackbike.com/feed/" htmlUrl="http://www.seejackbike.com"/>
+        <outline text="Stink's Place" title="Stink's Place" type="rss"
+            xmlUrl="http://blog.stevencwarren.com/?feed=rss2" htmlUrl="http://stevencwarren.com"/>
+        <outline text="Strange Brew" title="Strange Brew" type="rss"
+            xmlUrl="http://strngbrew.blogspot.com/feeds/posts/default" htmlUrl="http://strngbrew.blogspot.com/"/>
+        <outline text="The Fledgling Brewer"
+            title="The Fledgling Brewer" type="rss"
+            xmlUrl="http://feeds.feedburner.com/TheFledglingBrewer" htmlUrl="http://www.fledglingbrewer.com"/>
+        <outline text="The Great Nashville Hot Chicken Exploration"
+            title="The Great Nashville Hot Chicken Exploration"
+            type="rss" xmlUrl="http://www.nashvillehotchicken.com/feed/" htmlUrl="http://www.nashvillehotchicken.com"/>
+        <outline text="The Path Less Pedaled"
+            title="The Path Less Pedaled" type="rss"
+            xmlUrl="http://feeds.feedburner.com/ThePathLessPedaled" htmlUrl="http://pathlesspedaled.com"/>
+        <outline text="the transport politic"
+            title="the transport politic" type="rss"
+            xmlUrl="http://thetransportpolitic.com/feed/" htmlUrl="http://www.thetransportpolitic.com"/>
+        <outline text="Trail Journal" title="Trail Journal" type="rss"
+            xmlUrl="http://www.boatwright.us/journal/atom.xml" htmlUrl="http://www.boatwright.us/journal/"/>
+        <outline text="Turtle Anarchy Brewing Company"
+            title="Turtle Anarchy Brewing Company" type="rss"
+            xmlUrl="http://turtleanarchybrewingcompany.blogspot.com/feeds/posts/default" htmlUrl="http://turtleanarchybrewingcompany.blogspot.com/"/>
+        <outline text="UpHillGrind Productions"
+            title="UpHillGrind Productions" type="rss"
+            xmlUrl="http://uphillgrindproductions.wordpress.com/feed/" htmlUrl="http://uphillgrindproductions.wordpress.com"/>
+        <outline title="software" text="software">
+            <outline text="Geek Politics" title="Geek Politics"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/GeekPolitics" htmlUrl="http://geekpolitics.com"/>
+            <outline text="Joel on Software" title="Joel on Software"
+                type="rss"
+                xmlUrl="http://www.joelonsoftware.com/rss.xml" htmlUrl="http://www.joelonsoftware.com"/>
+            <outline text="Michael O.Church" title="Michael O.Church"
+                type="rss"
+                xmlUrl="http://michaelochurch.wordpress.com/feed/" htmlUrl="http://michaelochurch.wordpress.com"/>
+            <outline text="Paul Graham: Essays"
+                title="Paul Graham: Essays" type="rss"
+                xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" htmlUrl="http://www.paulgraham.com/"/>
+            <outline text="programming is terrible"
+                title="programming is terrible" type="rss"
+                xmlUrl="http://programmingisterrible.com/rss" htmlUrl="http://programmingisterrible.com/"/>
+            <outline text="SCORM" title="SCORM" type="rss"
+                xmlUrl="http://feeds2.feedburner.com/scorm/blog" htmlUrl="http://scorm.com"/>
+            <outline text="Signal vs. Noise" title="Signal vs. Noise"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/37signals/beMH" htmlUrl="http://37signals.com/svn/posts"/>
+            <outline text="The Brief" title="The Brief" type="rss"
+                xmlUrl="http://thebrief.io/atom.xml" htmlUrl="http://thebrief.io/days"/>
+        </outline>
+        <outline title="beer" text="beer">
+            <outline text="6 Guys Brewing" title="6 Guys Brewing"
+                type="rss" xmlUrl="http://6guysbrewing.com/?feed=rss2" htmlUrl="http://6guysbrewing.com"/>
+            <outline text="Appellation Beer: Beer From a Good Home"
+                title="Appellation Beer: Beer From a Good Home"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/AppellationBeerBeerFromAGoodHome" htmlUrl="http://appellationbeer.com"/>
+            <outline text="Avery Brewers Blog"
+                title="Avery Brewers Blog" type="rss"
+                xmlUrl="http://averybrewing.blogspot.com/feeds/posts/default" htmlUrl="http://averybrewing.blogspot.com/"/>
+            <outline text="Beer Activist" title="Beer Activist"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/BeerActivist" htmlUrl="http://beeractivist.com"/>
+            <outline text="Beer Law Blog" title="Beer Law Blog"
+                type="rss"
+                xmlUrl="http://www.beerlawblog.com/feeds/posts/default" htmlUrl="http://www.beerlawblog.com/"/>
+            <outline text="beer school blog" title="beer school blog"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/BeerSchoolBlog" htmlUrl="http://beerschoolblog.com/"/>
+            <outline text="Blogging at World of Beer"
+                title="Blogging at World of Beer" type="rss"
+                xmlUrl="http://worldofbeer.wordpress.com/feed/" htmlUrl="http://worldofbeer.wordpress.com"/>
+            <outline text="Brew Like A Monk" title="Brew Like A Monk"
+                type="rss"
+                xmlUrl="http://www.brewlikeamonk.com/?feed=rss2" htmlUrl="http://www.brewlikeamonk.com"/>
+            <outline text="brewvana" title="brewvana" type="rss"
+                xmlUrl="http://feeds.feedburner.com/Brewvana" htmlUrl="http://brewvana.wordpress.com"/>
+            <outline text="Brookston Beer Bulletin"
+                title="Brookston Beer Bulletin" type="rss"
+                xmlUrl="http://feeds.feedburner.com/brookston-beer-bulletin" htmlUrl="http://brookstonbeerbulletin.com"/>
+            <outline
+                text="Davis On Draft: A podcast about great craft beer"
+                title="Davis On Draft: A podcast about great craft beer"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/davisondraft" htmlUrl="http://www.davisondraft.com"/>
+            <outline text="DrankTank : The Beverage Blog"
+                title="DrankTank : The Beverage Blog" type="rss"
+                xmlUrl="http://feeds.feedburner.com/dranktank" htmlUrl="http://www.dranktank.com"/>
+            <outline text="Embrace The Funk" title="Embrace The Funk"
+                type="rss"
+                xmlUrl="http://embracethefunk.wordpress.com/feed/" htmlUrl="http://embracethefunk.com"/>
+            <outline text="Fermentarium.com" title="Fermentarium.com"
+                type="rss"
+                xmlUrl="http://feeds.feedburner.com/Fermentarium" htmlUrl="http://www.fermentarium.com"/>
+            <outline text="Jackalope Brewing" title="Jackalope Brewing"
+                type="rss" xmlUrl="http://blogalope.tumblr.com/rss" htmlUrl="http://blogalope.tumblr.com/"/>
+            <outline text="Mayday" title="Mayday" type="rss"
+                xmlUrl="http://maydaybrewery.blogspot.com/feeds/posts/default" htmlUrl="http://maydaybrewery.blogspot.com/"/>
+            <outline text="Nashville Beer Geek"
+                title="Nashville Beer Geek" type="rss"
+                xmlUrl="http://nashvillebeergeek.blogspot.com/feeds/posts/default" htmlUrl="http://nashvillebeergeek.blogspot.com/"/>
+            <outline text="New Belgium" title="New Belgium" type="rss"
+                xmlUrl="http://www.newbelgium.com/rss/the-tinkerer/rss" htmlUrl="http://www.newbelgium.com/Community/Blog.aspx"/>
+            <outline text="Shut up about Barclay Perkins"
+                title="Shut up about Barclay Perkins" type="rss"
+                xmlUrl="http://barclayperkins.blogspot.com/feeds/posts/default" htmlUrl="http://barclayperkins.blogspot.com/"/>
+            <outline text="The Beer Snob Beer Reviews"
+                title="The Beer Snob Beer Reviews" type="rss"
+                xmlUrl="http://thebeersnob.wordpress.com/feed/" htmlUrl="http://www.thebeersnob.com"/>
+            <outline text="the Perfect Pint" title="the Perfect Pint"
+                type="rss"
+                xmlUrl="http://perfectpint.blogspot.com/feeds/posts/default" htmlUrl="http://perfectpint.blogspot.com/"/>
+            <outline text="YAZOO BREW" title="YAZOO BREW" type="rss"
+                xmlUrl="http://yazoobrew.blogspot.com/feeds/posts/default" htmlUrl="http://yazoobrew.blogspot.com/"/>
+            <outline text="Zythophile" title="Zythophile" type="rss"
+                xmlUrl="http://zythophile.wordpress.com/feed/" htmlUrl="http://zythophile.wordpress.com"/>
+        </outline>
+        <outline title="bikes" text="bikes">
+            <outline text="Big Wheel Building"
+                title="Big Wheel Building" type="rss"
+                xmlUrl="http://lacemine29.blogspot.com/feeds/posts/default" htmlUrl="http://lacemine29.blogspot.com/"/>
+            <outline text="BikeTown" title="BikeTown" type="rss"
+                xmlUrl="http://biketownabilene.blogspot.com/feeds/posts/default" htmlUrl="http://biketownabilene.blogspot.com/"/>
+            <outline text="east side cyclist" title="east side cyclist"
+                type="rss"
+                xmlUrl="http://eastsidecyclist.blogspot.com/feeds/posts/default" htmlUrl="http://eastsidecyclist.blogspot.com/"/>
+            <outline text="Epic Riding | Grizzly Adam"
+                title="Epic Riding | Grizzly Adam" type="rss"
+                xmlUrl="http://feeds.feedburner.com/EpicRidingEpicWriting" htmlUrl="http://grizzlyadam.net"/>
+            <outline text="misadventures of a wally"
+                title="misadventures of a wally" type="rss"
+                xmlUrl="http://hollowsupplanter.blogspot.com/feeds/posts/default" htmlUrl="http://hollowsupplanter.blogspot.com/"/>
+            <outline text="Nine Mile Skid" title="Nine Mile Skid"
+                type="rss"
+                xmlUrl="http://ninemileskid.blogspot.com/feeds/posts/default" htmlUrl="http://ninemileskid.blogspot.com/"/>
+            <outline text="THE TRANS IOWA RACE V.4"
+                title="THE TRANS IOWA RACE V.4" type="rss"
+                xmlUrl="http://transiowa.blogspot.com/feeds/posts/default" htmlUrl="http://transiowa.blogspot.com/"/>
+            <outline text="velomech" title="velomech" type="rss"
+                xmlUrl="http://velomech.livejournal.com/data/rss" htmlUrl="http://velomech.livejournal.com/"/>
+            <outline text="Yazoo Racing Team" title="Yazoo Racing Team"
+                type="rss"
+                xmlUrl="http://yazooracing.blogspot.com/feeds/posts/default" htmlUrl="http://yazooracing.blogspot.com/"/>
+        </outline>
+        <outline title="mine" text="mine">
+            <outline text="myCryption" title="myCryption" type="rss"
+                xmlUrl="http://mycryption.blogspot.com/feeds/posts/default" htmlUrl="http://mycryption.blogspot.com/"/>
+            <outline text="myCryption" title="myCryption" type="rss"
+                xmlUrl="http://mycryption.tumblr.com/rss" htmlUrl="http://mycryption.tumblr.com/"/>
+        </outline>
+        <outline title="design" text="design">
+            <outline text="Invisible Creature Speaks"
+                title="Invisible Creature Speaks" type="rss"
+                xmlUrl="http://blog.invisiblecreature.com/?feed=rss2" htmlUrl="http://blog.invisiblecreature.com"/>
+            <outline text="KNI®" title="KNI®" type="rss"
+                xmlUrl="http://feeds.feedburner.com/kurtnoble/blog" htmlUrl="http://blog.kurtnoble.com/"/>
+            <outline text="Yummy Fresh grain feed!"
+                title="Yummy Fresh grain feed!" type="rss"
+                xmlUrl="http://feeds.feedburner.com/GrainEdit" htmlUrl="http://grainedit.com"/>
+        </outline>
+        <outline title="business" text="business">
+            <outline text="AuthenticJobs.com Job Listings"
+                title="AuthenticJobs.com Job Listings" type="rss"
+                xmlUrl="http://www.authenticjobs.com/rss/custom.php?terms=Anywhere&amp;type=freelance&amp;cats=2,&amp;id=1259017511" htmlUrl="http://www.authenticjobs.com"/>
+            <outline
+                text="Nashville Business News - Local Nashville News | The Nashville Business Journal"
+                title="Nashville Business News - Local Nashville News | The Nashville Business Journal"
+                type="rss"
+                xmlUrl="http://nashville.bizjournals.com/rss/feed/daily/nashville" htmlUrl="http://www.bizjournals.com/rss/feed/daily/nashville"/>
+        </outline>
+        <outline title="blogs" text="blogs">
+            <outline text="Chewieez-what's in an online name?"
+                title="Chewieez-what's in an online name?" type="rss"
+                xmlUrl="http://chewieez.blogspot.com/feeds/posts/default" htmlUrl="http://chewieez.blogspot.com/"/>
+            <outline text="don't be such a guppy."
+                title="don't be such a guppy." type="rss"
+                xmlUrl="http://torissecret.wordpress.com/feed/" htmlUrl="http://torissecret.wordpress.com"/>
+            <outline text="far too serious" title="far too serious"
+                type="rss" xmlUrl="http://fartooserious.com/?feed=rss2" htmlUrl="http://fartooserious.com"/>
+            <outline text="J5Marsupial :: Marsupial Street"
+                title="J5Marsupial :: Marsupial Street" type="rss"
+                xmlUrl="http://j5marsupial.blogspot.com/feeds/posts/default" htmlUrl="http://j5marsupial.blogspot.com/"/>
+            <outline text="SGnTN" title="SGnTN" type="rss"
+                xmlUrl="http://www.somegeekintn.com/blog/feed/" htmlUrl="http://www.somegeekintn.com/blog"/>
+            <outline text="The Martin Family" title="The Martin Family"
+                type="rss"
+                xmlUrl="http://www.flamingobear.com/blog/atom.xml" htmlUrl="http://flamingobear.com"/>
+            <outline text="What Up with Jut Rut"
+                title="What Up with Jut Rut" type="rss"
+                xmlUrl="http://whatupwithjutrut.blogspot.com/feeds/posts/default" htmlUrl="http://whatupwithjutrut.blogspot.com/"/>
+            <outline text="yewknee.com" title="yewknee.com" type="rss"
+                xmlUrl="http://www.yewknee.com/rss/" htmlUrl="http://yewknee.com/"/>
+        </outline>
+    </body>
+</opml>

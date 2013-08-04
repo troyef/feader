@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* 
+tgrid - grid layout
+18 cols by 50px, with a 5px gutter
+*/
+
+/* #Base grid 
+================================================== */
+
+.row {width: 100%; margin: 0 auto;	overflow: hidden;}
+.row .row {	margin: 0;	width: auto; display: inline-block;}
+.col { display: inline; overflow: hidden; float: left; position: relative;}
+
+.row .col.one	 {	width:6.25%;	 }
+.row .col.two 	 {	width:12.5%; }
+.row .col.three  {	width:18.75%; }
+.row .col.four 	 {	width:25%; }
+.row .col.five	 {	width:31.25%; }
+.row .col.six	 {	width:37.5%; }
+.row .col.seven	 {	width:43.75%; }
+.row .col.eight	 {	width:50%; }
+.row .col.nine 	 {	width:56.25%; }
+.row .col.ten	 {	width:62.5%; }
+.row .col.eleven	 {	width:68.75%; }
+.row .col.twelve	 {	width:75%; }
+.row .col.thirteen	 {	width:81.25%; }
+.row .col.fourteen	 {	width:87.5%; }
+.row .col.fifteen	 {	width:93.75%; }
+.row .col.sixteen	 {	width:100%; }
+
+
+
+/*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 350px) {
+
+	.row .col.one,
+	.row .col.two,
+	.row .col.three,
+	.row .col.four,
+	.row .col.five,
+	.row .col.six,
+	.row .col.seven,
+	.row .col.eight,
+	.row .col.nine,
+	.row .col.ten,
+	.row .col.eleven,
+	.row .col.twelve,
+	.row .col.thirteen,
+	.row .col.fourteen,
+	.row .col.fifteen,
+	.row .col.sixteen {	width:100%; }
+
+
+}
+
