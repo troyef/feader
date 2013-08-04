@@ -549,6 +549,15 @@ header {
   height: 22px;
   background-color: #eeeeee;
   padding: 3px 40px; }
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 3px 20px; } }
+  @media screen and (max-width: 480px) {
+    header {
+      padding: 3px 10px; } }
+  @media screen and (max-width: 360px) {
+    header {
+      padding: 3px; } }
   header .logo {
     float: left;
     line-height: 22px;
@@ -659,6 +668,15 @@ header {
 .feedHead {
   margin: 0 40px;
   height: 35px; }
+  @media screen and (max-width: 768px) {
+    .feedHead {
+      margin: 0 20px; } }
+  @media screen and (max-width: 480px) {
+    .feedHead {
+      margin: 0 10px; } }
+  @media screen and (max-width: 360px) {
+    .feedHead {
+      margin: 0 3px; } }
   .feedHead .info_div {
     position: relative;
     top: 13px;
@@ -687,6 +705,15 @@ header {
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
   margin-bottom: 50px; }
+  @media screen and (max-width: 768px) {
+    .feedContainer {
+      margin: 0 20px; } }
+  @media screen and (max-width: 480px) {
+    .feedContainer {
+      margin: 0 10px; } }
+  @media screen and (max-width: 360px) {
+    .feedContainer {
+      margin: 0 3px; } }
   .feedContainer .entry {
     border-bottom: 1px solid #DDD;
     padding: 3px 0; }
