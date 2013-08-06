@@ -11,7 +11,6 @@ class User{
 	public $viewOneEntryAtATime = true;
 	
 	
-	
 	public function __construct($userObj = null) {
 		
 		if (null != $userObj){
@@ -39,6 +38,11 @@ class User{
 		$userRow = $feedSvc->findUser($vendorId);
 		
 		$user = new User($userRow);
+		
+		if ($user->id == null && $feedSvc->getUserCount() <= 100){
+			$userRow = $feedSvc->createGetUser($vendorId);
+			$user = new User($userRow);
+		}
 		
 		
 		return $user;

@@ -120,13 +120,13 @@ require 'Config.php';
 			</div>
 	        <div class="feedHead">
 			
-				<div class="head-button right" data-bind="click: refreshFeeds "><i class="icon-refresh"></i></div>
+				<div class="head-button right" data-bind="click: refreshFeeds "><i class="icon-refresh" title="Refresh"></i></div>
 				<div class="head-button right" data-bind=" "><i class="icon-cog"></i></div>
-				<div class="head-button right" data-bind="click: toggleAddFeed "><i class="icon-plus"></i></div>
+				<div class="head-button right" data-bind="click: toggleAddFeed " title="Add Feed"><i class="icon-plus"></i></div>
 			
 				<!--<div class="head-button left" data-bind=" "><i class="icon-ok"></i></div>-->
-				<div class="head-button left" data-bind="click: toggleSelectAll "><i class="icon-check"></i></div>
-				<div class="head-button left" data-bind="click: removeSelected "><i class="icon-trash"></i></div>
+				<div class="head-button left" data-bind="click: toggleSelectAll "><i class="icon-check" title="(De)Select All"></i></div>
+				<div class="head-button left" data-bind="click: removeSelected "><i class="icon-trash" title="Remove Selected"></i></div>
 				<!--<div class="head-button left" data-bind=" "><i class="icon-star"></i></div>-->
 				
 				<div class="info_div left" data-bind="visible: selectedCount() > 0  ">Selected: <span data-bind="text: selectedCount"></span></div>
@@ -141,12 +141,12 @@ require 'Config.php';
 				    <div class="entry" data-bind='css: { isread: showIsRead }, attr: { "data-id": entryId }'>
 				
 						<div class="right_gutter " >
-							<a data-bind="attr: { href: entry.link }" target="_blank">
+							<a data-bind="attr: { href: entry.link }" target="_blank" title="Open original">
 							    <i class="icon-share-alt" ></i>
 							</a>
-							<i class="icon-trash" data-bind="click: removeEntry "></i>
+							<i class="icon-trash" data-bind="click: removeEntry " title="Remove (and mark as read)"></i>
 							<!--<i class="icon-star" data-bind=" "></i>-->
-							<i class="icon-repeat" data-bind="click: markUnread "></i>
+							<i class="icon-repeat" data-bind="click: markUnread, visible: isRead " title="Mark unread"></i>
 							<div class="smEntryDate" data-bind="text: localDate"></div>
 						
 						</div>
@@ -185,8 +185,8 @@ require 'Config.php';
 			</div>
 			
 			<div class="left_area">
-				<a class="left">Privacy Policy</a>
-				<a class="left">Terms of Use</a>
+				<a class="left" href="privacy.html">Privacy Policy</a>
+				<a class="left" href="terms.html">Terms of Use</a>
 			</div>
 
 			<div class="clear"></div>

@@ -12,6 +12,15 @@ class FeaderDataService{
 		$this->_db = new \Feader\DBHelper($this->_configuration);
 	}
 	
+	public function getUserCount(){
+		
+		$query = "Select Count(*) as usrCount from users;";
+
+		$rows = $this->_db->executeQueryConnection($query);
+		$row = mysqli_fetch_assoc($rows);
+		return $row['usrCount'];
+	}
+	
 	public function getUser($id){
 		
 		$query = "Select * from users where id = '$id';";
@@ -26,6 +35,28 @@ class FeaderDataService{
 		$query = "Select u.* from users u inner join vendor_users vu on u.id = vu.user_id where vu.vendorId = '$vendorId';";
 		$rows = $this->_db->executeQueryConnection($query);
 		return mysqli_fetch_assoc($rows);
+		
+	}
+	
+	public function createGetUser($vendorId){
+		$uId = uniqid();
+		$this->_db->createConnection();
+		
+		$userQuery = "INSERT INTO users (id) values ('$uId');";
+		$this->_db->executeQuery($userQuery);
+		
+		$query = "INSERT INTO vendor_users (user_id, vendorId) values ('$uId','$vendorId');";
+		$this->_db->executeQuery($query);
+		
+		$selectQuery = "Select u.* from users u inner join vendor_users vu on u.id = vu.user_id where vu.vendorId = '$vendorId';";
+		$rows = $this->_db->executeQuery($selectQuery);
+		$row = mysqli_fetch_assoc($rows);
+		
+		$this->_db->closeConnection();
+		
+
+		return $row;
+
 		
 	}
 	
