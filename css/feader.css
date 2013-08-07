@@ -732,7 +732,7 @@ header {
         height: 8px;
         width: 8px;
         border: 1px dashed #dddddd;
-        background-color: #FFF; }
+        background-color: transparent; }
         .feedContainer .entry .left_gutter .save_marker.icon-check {
           left: 0;
           top: 0px;

@@ -200,5 +200,6 @@ require 'Config.php';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 			})();
 		</script>
+		<?php echo $CFG->gAnalytics; ?>
     </body>
 </html>

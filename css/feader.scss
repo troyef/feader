@@ -124,7 +124,7 @@ header {height:22px;background-color:$shade;padding: 3px 40px;
 		
 			.save_marker{position:absolute;left:1px;top:3px;height:8px;width:8px;
 				border:1px dashed $borders;
-				background-color:#FFF;
+				background-color:transparent;
 				
 				&.icon-check {left:0;top:0px;height:14px;width:14px;border:none;}
 			}
