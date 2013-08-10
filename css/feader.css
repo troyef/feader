@@ -549,15 +549,6 @@ header {
   height: 22px;
   background-color: #eeeeee;
   padding: 3px 40px; }
-  @media screen and (max-width: 768px) {
-    header {
-      padding: 3px 20px; } }
-  @media screen and (max-width: 480px) {
-    header {
-      padding: 3px 10px; } }
-  @media screen and (max-width: 360px) {
-    header {
-      padding: 3px 5px; } }
   header .logo {
     float: left;
     line-height: 22px;
@@ -665,33 +656,17 @@ header {
   .head-button.left {
     margin-right: 5px; }
 
-.feedHead {
-  margin: 0 40px;
-  height: 35px; }
-  @media screen and (max-width: 768px) {
-    .feedHead {
-      margin: 0 20px; } }
-  @media screen and (max-width: 480px) {
-    .feedHead {
-      margin: 0 10px; } }
-  @media screen and (max-width: 360px) {
-    .feedHead {
-      margin: 0 5px; } }
-  .feedHead .info_div {
-    position: relative;
-    top: 13px;
-    line-height: 15px;
-    font-size: .9em;
-    margin-left: 5px; }
-  .feedHead .loading {
-    display: none;
-    margin: 0 auto;
+.loading {
+  display: none;
+  position: fixed;
+  top: 5px;
+  width: 100%; }
+  .loading .loadingText {
     background-color: rgba(65, 148, 251, 0.5);
     height: 20px;
-    position: relative;
-    top: 9px;
-    text-align: center;
+    margin: 0 auto;
     width: 100px;
+    text-align: center;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -700,20 +675,21 @@ header {
     line-height: 20px;
     font-size: .9em; }
 
+.feedHead {
+  margin: 0 40px;
+  height: 35px; }
+  .feedHead .info_div {
+    position: relative;
+    top: 13px;
+    line-height: 15px;
+    font-size: .9em;
+    margin-left: 5px; }
+
 .feedContainer {
   margin: 0 40px;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
   margin-bottom: 50px; }
-  @media screen and (max-width: 768px) {
-    .feedContainer {
-      margin: 0 20px; } }
-  @media screen and (max-width: 480px) {
-    .feedContainer {
-      margin: 0 10px; } }
-  @media screen and (max-width: 360px) {
-    .feedContainer {
-      margin: 0 5px; } }
   .feedContainer .entry {
     border-bottom: 1px solid #DDD;
     padding: 3px 0; }
@@ -795,10 +771,20 @@ header {
         padding: 20px 5px;
         clear: left;
         background-color: #FFF; }
-      .feedContainer .entry .entry_content .icon-chevron-up {
+      .feedContainer .entry .entry_content a.f_close, .feedContainer .entry .entry_content a.f_close:hover, .feedContainer .entry .entry_content a.f_close:visited {
+        padding: 2px 3px;
+        border: 1px solid #dddddd;
         position: absolute;
-        bottom: 0;
-        right: 0; }
+        bottom: 3px;
+        right: 5px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#cccccc));
+        background: -moz-linear-gradient(top, #eeeeee, #cccccc);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc');
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px; }
 
 .no_feeds {
   text-align: center;
@@ -825,3 +811,111 @@ footer {
     margin-left: 40px; }
     footer .left_area .left {
       margin-right: 10px; }
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #eeeeee; }
+
+  header {
+    padding: 3px 10px; }
+
+  .feedHead .info_div {
+    line-height: 33px; }
+
+  .head-button {
+    display: inline;
+    padding: 8px;
+    top: 9px; }
+    .head-button.right {
+      margin-left: 10px; }
+    .head-button.left {
+      margin-right: 10px; }
+
+  .feedHead {
+    margin: 0 10px; }
+
+  .feedContainer {
+    margin: 0 10px;
+    border-width: 0px;
+    margin-bottom: 50px; }
+    .feedContainer .entry {
+      border-width: 0px;
+      background-color: #FFF;
+      margin: 15px 0;
+      padding: 8px 0;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px; }
+      .feedContainer .entry.isread {
+        background-color: #DEDEDE; }
+      .feedContainer .entry div {
+        position: relative; }
+      .feedContainer .entry .left_gutter {
+        float: left;
+        width: 25px;
+        z-index: 6; }
+        .feedContainer .entry .left_gutter .save_marker {
+          height: 12px;
+          width: 12px;
+          left: 4px;
+          top: 2px; }
+          .feedContainer .entry .left_gutter .save_marker.icon-check {
+            left: 4px;
+            top: 1px; }
+        .feedContainer .entry .left_gutter i {
+          margin-left: 15px; }
+      .feedContainer .entry .right_gutter {
+        float: right;
+        text-align: right;
+        margin-left: 15px;
+        font-size: .8em;
+        z-index: 6;
+        padding-right: 5px; }
+        .feedContainer .entry .right_gutter a, .feedContainer .entry .right_gutter a:hover, .feedContainer .entry .right_gutter a:visited {
+          padding: 8px;
+          border: 1px solid #dddddd;
+          position: relative;
+          top: 8px;
+          background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#cccccc));
+          background: -moz-linear-gradient(top, #eeeeee, #cccccc);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc');
+          -ms-border-radius: 3px;
+          -o-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          border-radius: 3px;
+          margin-left: 5px; }
+        .feedContainer .entry .right_gutter i {
+          margin: 0; }
+        .feedContainer .entry .right_gutter .smEntryDate {
+          display: block;
+          margin-top: 20px; }
+      .feedContainer .entry .entryDate {
+        display: none; }
+      .feedContainer .entry .entry_content {
+        margin-left: 25px; }
+        .feedContainer .entry .entry_content .feedname {
+          font-size: 1.1em; }
+        .feedContainer .entry .entry_content .entrytitle {
+          font-size: 1.1em; }
+        .feedContainer .entry .entry_content .content {
+          margin: 20px 10% 0;
+          padding: 20px 5px;
+          clear: left;
+          background-color: #FFF; }
+        .feedContainer .entry .entry_content a.f_close, .feedContainer .entry .entry_content a.f_close:hover, .feedContainer .entry .entry_content a.f_close:visited {
+          padding: 7px 8px;
+          border: 1px solid #dddddd;
+          position: absolute;
+          bottom: 3px;
+          right: 5px;
+          background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#cccccc));
+          background: -moz-linear-gradient(top, #eeeeee, #cccccc);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cccccc');
+          -ms-border-radius: 3px;
+          -o-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          border-radius: 3px; } }

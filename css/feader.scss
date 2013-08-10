@@ -15,10 +15,6 @@ a:hover, .link:hover, a:focus { color:$linkColorHover;text-decoration:underline;
 
 header {height:22px;background-color:$shade;padding: 3px 40px;
 
-	@media screen and (max-width: 768px){padding:3px 20px;}
-	@media screen and (max-width: 480px){padding:3px 10px;}
-	@media screen and (max-width: 360px){padding:3px 5px;}
-
 	.logo {float:left;line-height:22px;font-weight:bold;}
 
 	.user_info{line-height:22px;
@@ -84,35 +80,29 @@ header {height:22px;background-color:$shade;padding: 3px 40px;
 	&.left {margin-right:5px;}
 }
 
-.feedHead {margin:0 40px;height:35px;
-	
-	@media screen and (max-width: 768px){margin:0 20px;}
-	@media screen and (max-width: 480px){margin:0 10px;}
-	@media screen and (max-width: 360px){margin:0 5px;}
-	
-	.info_div {position:relative;top:13px;line-height:15px;font-size:.9em;margin-left:5px;}
+.loading {display:none;position: fixed;top: 5px;width:100%;
 
-	.loading {display:none;margin:0 auto;
-		background-color:transparentize($linkColor,.5);
-	    height: 20px;
-	    position: relative;top: 9px;
-	    text-align: center;
-	    width: 100px;
+	.loadingText {background-color:transparentize($linkColor,.5);
+    	height: 20px;
+		margin:0 auto;
+    	width: 100px;
+    	text-align: center;
 		@include rounded(3px);
 		line-height:20px;
 		font-size:.9em;
-	}
+    }
+	
+	
+}
 
+.feedHead {margin:0 40px;height:35px;
+	
+	.info_div {position:relative;top:13px;line-height:15px;font-size:.9em;margin-left:5px;}
 }
 
 .feedContainer{margin:0 40px;border-top:1px solid $borders;border-bottom:1px solid $borders;
 	margin-bottom:50px;
 	
-	@media screen and (max-width: 768px){margin:0 20px;}
-	@media screen and (max-width: 480px){margin:0 10px;}
-	@media screen and (max-width:360px){margin:0 5px;}
-	
-
 	.entry {border-bottom:1px solid #DDD;
 		padding:3px 0;
 		
@@ -171,8 +161,13 @@ header {height:22px;background-color:$shade;padding: 3px 40px;
 				background-color:#FFF;
 			}
 			
-			.icon-chevron-up {position:absolute;bottom:0;right:0;}
-		
+			a.f_close, a.f_close:hover, a.f_close:visited {padding:2px 3px; border:1px solid $borders;
+				position:absolute;bottom:3px;right:5px;
+				@include gradient(#EEE,#CCC);
+				@include rounded(3px);
+
+				.icon-chevron-up {}
+			}		
 		}
 		
 		
@@ -197,6 +192,102 @@ footer {position:fixed;bottom:0;left:0;width:100%;height:20px;z-index:10;
 	
 		.left {margin-right:10px;}
 	}
+
+
+}
+
+@media screen and (max-width: 768px){
+	body {background-color:$shade;}
+	
+	header {padding:3px 10px;}
+	
+	.feedHead {
+
+		.info_div {line-height:33px;}
+
+	}
+	.head-button {display:inline;padding:8px; top: 9px;
+
+		&.right {margin-left:10px;}
+		&.left {margin-right:10px;}
+	}
+	
+	
+	.feedHead {margin:0 10px;}
+	.feedContainer{margin:0 10px;border-width:0px;
+		margin-bottom:50px;
+
+		.entry {border-width:0px;background-color:#FFF;margin:15px 0;
+			padding:8px 0;@include rounded(3px);
+
+			&.isread{background-color:#DEDEDE;}
+
+			div {position:relative;}
+
+			.left_gutter {float:left;width:25px;z-index:6;
+
+				.save_marker{height:12px;width:12px;left:4px;top:2px;
+
+					&.icon-check {left:4px;top:1px;}
+				}
+				i {margin-left:15px;}
+			}
+
+			.right_gutter {float:right;text-align:right;margin-left:15px;
+				font-size:.8em;z-index:6;padding-right:5px;
+
+				a, a:hover, a:visited {padding:8px; border:1px solid $borders;position: relative;top: 8px;
+					@include gradient(#EEE,#CCC);@include rounded(3px);margin-left:5px;}
+				i {margin:0;}
+
+				.smEntryDate {display:block;margin-top:20px;
+					
+				}
+			}
+			.entryDate {display:none;}
+
+			.entry_content{margin-left:25px;
+
+				.feedname {font-size:1.1em;
+				}
+
+				.entrytitle {font-size:1.1em;
+
+					.entryName {}
+					.entrySnip {}
+					.entryDate {}
+				}
+
+				.snippet {
+				}
+
+				.content {margin:20px 10% 0; padding:20px 5px;
+					clear:left;
+					background-color:#FFF;
+				}
+				
+				a.f_close, a.f_close:hover, a.f_close:visited {padding:7px 8px; border:1px solid $borders;
+					position:absolute;bottom:3px;right:5px;
+					@include gradient(#EEE,#CCC);@include rounded(3px);
+
+					.icon-chevron-up {}
+				}
+				
+
+			}
+
+
+
+
+		}
+
+	}
+	
+		
+
+}
+
+@media screen and (max-width:360px){
 
 
 }

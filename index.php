@@ -109,6 +109,7 @@ require 'Config.php';
 		</section>
 		
 		<section id="feeds" data-bind="visible: userKnown">
+			<div class="loading"><div class="loadingText">loading feeds</div></div>
 			<div class="screenBlanket" data-bind="visible: blanketScreen"></div>
 			<div class="feedAddDiv" data-bind="visible: showAddFeed, keyupBubble:false">
 				<div class="feedAdd">
@@ -132,8 +133,6 @@ require 'Config.php';
 				<div class="info_div left" data-bind="visible: selectedCount() > 0  ">Selected: <span data-bind="text: selectedCount"></span></div>
 				<div class="info_div left" data-bind="text: 'Total: ' + feedEntries().length"></div>
 				
-				<div class="loading">loading feeds</div>
-			
 				<div class="clear"></div>
 			</div>
 	        <div class="feedContainer" data-bind="foreach: feedEntries">
@@ -144,9 +143,13 @@ require 'Config.php';
 							<a data-bind="attr: { href: entry.link }" target="_blank" title="Open original">
 							    <i class="icon-share-alt" ></i>
 							</a>
-							<i class="icon-trash" data-bind="click: removeEntry " title="Remove (and mark as read)"></i>
+							<a data-bind="click: removeEntry" title="Remove (and mark as read)">
+							    <i class="icon-trash" ></i>
+							</a>
 							<!--<i class="icon-star" data-bind=" "></i>-->
-							<i class="icon-repeat" data-bind="click: markUnread, visible: isRead " title="Mark unread"></i>
+							<a data-bind="click: markUnread, visible: isRead" title="Mark unread">
+							    <i class="icon-repeat" ></i>
+							</a>
 							<div class="smEntryDate" data-bind="text: localDate"></div>
 						
 						</div>
@@ -165,7 +168,9 @@ require 'Config.php';
 							</div>
 						
 							<div class="content" data-bind='html: entry.content, visible: viewContent'></div>
-							<i class="icon-chevron-up" data-bind="click: toggleView,  visible: viewContent"></i>
+							<a class="f_close" data-bind="click: toggleView,  visible: viewContent" title="Close">
+							    <i class="icon-chevron-up" ></i>
+							</a>
 						</div>
 					
 
