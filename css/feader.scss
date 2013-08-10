@@ -261,9 +261,16 @@ footer {position:fixed;bottom:0;left:0;width:100%;height:20px;z-index:10;
 				.snippet {
 				}
 
-				.content {margin:20px 10% 0; padding:20px 5px;
+				.content {margin:20px 10px 0; padding:20px 5px;
 					clear:left;
 					background-color:#FFF;
+					
+					@media screen and (max-width:360px){margin:20px 5px 0; padding:20px 5px;
+					}
+					
+					img {max-width:600px;height:auto;
+						@media screen and (max-width:360px){max-width:300px;}
+					}
 				}
 				
 				a.f_close, a.f_close:hover, a.f_close:visited {padding:7px 8px; border:1px solid $borders;
@@ -287,7 +294,4 @@ footer {position:fixed;bottom:0;left:0;width:100%;height:20px;z-index:10;
 
 }
 
-@media screen and (max-width:360px){
 
-
-}

@@ -901,10 +901,13 @@ footer {
         .feedContainer .entry .entry_content .entrytitle {
           font-size: 1.1em; }
         .feedContainer .entry .entry_content .content {
-          margin: 20px 10% 0;
+          margin: 20px 10px 0;
           padding: 20px 5px;
           clear: left;
           background-color: #FFF; }
+          .feedContainer .entry .entry_content .content img {
+            max-width: 600px;
+            height: auto; }
         .feedContainer .entry .entry_content a.f_close, .feedContainer .entry .entry_content a.f_close:hover, .feedContainer .entry .entry_content a.f_close:visited {
           padding: 7px 8px;
           border: 1px solid #dddddd;
@@ -919,3 +922,10 @@ footer {
           -moz-border-radius: 3px;
           -webkit-border-radius: 3px;
           border-radius: 3px; } }
+        @media screen and (max-width: 768px) and (max-width: 360px) {
+          .feedContainer .entry .entry_content .content {
+            margin: 20px 5px 0;
+            padding: 20px 5px; } }
+          @media screen and (max-width: 768px) and (max-width: 360px) {
+            .feedContainer .entry .entry_content .content img {
+              max-width: 300px; } }
