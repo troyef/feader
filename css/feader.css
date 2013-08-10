@@ -929,3 +929,6 @@ footer {
           @media screen and (max-width: 768px) and (max-width: 360px) {
             .feedContainer .entry .entry_content .content img {
               max-width: 300px; } }
+@media screen and (max-width: 360px) {
+  .selectedCount {
+    display: none; } }

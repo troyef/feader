@@ -130,7 +130,8 @@ require 'Config.php';
 				<div class="head-button left" data-bind="click: removeSelected "><i class="icon-trash" title="Remove Selected"></i></div>
 				<!--<div class="head-button left" data-bind=" "><i class="icon-star"></i></div>-->
 				
-				<div class="info_div left" data-bind="visible: selectedCount() > 0  ">Selected: <span data-bind="text: selectedCount"></span></div>
+				<div class="info_div left selectedCount" data-bind="visible: selectedCount() > 0  ">
+					Selected: <span data-bind="text: selectedCount"></span></div>
 				<div class="info_div left" data-bind="text: 'Total: ' + feedEntries().length"></div>
 				
 				<div class="clear"></div>
