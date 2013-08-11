@@ -91,7 +91,7 @@ require 'Config.php';
 				  <span
 				    class="g-signin"
 				    data-callback="signinCallback"
-				    data-clientid="688833782574.apps.googleusercontent.com"
+				    data-clientid="<?php echo $CFG->gClientId; ?>"
 				    data-cookiepolicy="single_host_origin"
 				    data-requestvisibleactions="http://schemas.google.com/AddActivity"
 				    data-scope="https://www.googleapis.com/auth/plus.login">
