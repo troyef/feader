@@ -235,7 +235,7 @@ FDR.Feader = function(){
 		self.localDate = ko.computed(function(){
 		   function padZero(val){return (val.length == 1 ? '0' + val : val )}
 		   var dt = new Date(self.entry.publishedDate);
-			return days[dt.getDay()] + " " + dt.getMonth() + "/" + dt.getDate() + " " + padZero(String(dt.getHours())) + ":" + padZero(String(dt.getMinutes()));
+			return days[dt.getDay()] + " " + (dt.getMonth() + 1) + "/" + dt.getDate() + " " + padZero(String(dt.getHours())) + ":" + padZero(String(dt.getMinutes()));
 		});
 		
 		self.toggleSelected = function(){
