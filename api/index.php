@@ -13,7 +13,8 @@ $app->get('/test', function () use ($app) {
 	$req = $app->request();
 	echo $req->getUrl().$req->getPath()."<br/>";
 
-	echo json_encode(\Feader\GFeedService::LoadFeed("http://feeds.feedburner.com/GeekPolitics"));
+	//echo json_encode(\Feader\PieService::LoadFeed("http://feeds.feedburner.com/GeekPolitics"));
+	echo \Feader\PieService::LoadFeed("http://feeds.feedburner.com/GeekPolitics");
 
 });
 
