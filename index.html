@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feader</title>
+        <link rel="stylesheet" type="text/css" href="styles/fdr.css"/>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-cookies.min.js"></script>
+
+        
+        <script>
+        function google_plus_sign_in_render(authResult) {
+          angular.element($('#gSigninDiv')).scope().signinCallback(authResult);
+        }
+        </script>
+        
+        
+  </head>
+  <body ng-app="Feader">
+    <header>
+    	<div id="top-bar"></div>
+      <div ng-controller="LoginController" id="gSigninDiv" >
+        <div class="loginInfo" ng-class="{active:!showLogin}">
+    			<img class="avatar" ng-src="{{avatarSrc}}"/>
+    			<div class="user_name">{{username}}</div>
+        </div>
+        <div class="loginWrapper" ng-class="{active:showLogin}">
+          <g+signin clientid="688833782574" ></g+signin>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container" ng-view></div>
+    
+    <!--<div class="loadingIndicator" ng-controller="LoadingCtrl" ng-show="isLoading"><i /></div>-->
+	
+    <script src="scripts/app.js"></script>
+    <!-- Services -->
+    <script src="scripts/services/http-auth-interceptor.js"></script>
+    <!--<script src="scripts/services/ParseService.js"></script>-->
+
+    <!-- Controllers -->
+    <script src="scripts/controllers/HomeController.js"></script>
+    <script src="scripts/controllers/LoginController.js"></script>
+
+
+    <!-- Directives -->
+    <script src="scripts/directives/google-plus-signin.js"></script>
+    
+    
+  </body>
+	
+</html>

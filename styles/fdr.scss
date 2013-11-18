@@ -1,0 +1,28 @@
+@import 'tUtils';
+@import 'tbase';
+
+$linkColor:#4194FB;
+$linkColorHover: darken($linkColor, 15%);
+$borders: #DDD;
+$shade:#EEE;
+
+header {
+
+	
+	.loginInfo{line-height:22px;display:none;
+    &.active {display:block;}
+	
+  	.user_name {float:right;font-size:.9em;}
+		
+		.avatar {float:right;margin-left:5px;border:1px solid $borders;}
+		
+	}
+  
+  .loginWrapper {position:absolute;top:-500px;
+
+    &.active{top:30px;}
+  }
+
+
+}
+
