@@ -44,9 +44,9 @@ header {height:22px;background-color:$shade;padding: 3px 40px;
 
 }
 
-#feeds {position:relative;height:100%;
+#feeds {position:relative;padding-bottom:10px;
 	
-	.screenBlanket{position:absolute;height:100%;width:100%;@include opacity(.9);background-color:#888;z-index:10;}
+	.screenBlanket{position:fixed;height:100%;width:100%;@include opacity(.9);background-color:#888;z-index:10;}
 
 	.feedAddDiv{position:absolute;top:20px;width:100%;z-index:15;
 

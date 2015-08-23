@@ -23,10 +23,14 @@ FDR.viewModel = function(){
 		if (!self.showAddFeed()){
 			$('body').on('keyup',function(e){
 				//alert(e.keyCode);
-			   	if(e.keyCode == 78){
-			       	// user has pressed n
-			       	FDR.viewModel.moveNextEntry();
-			   	}
+		   	if(e.keyCode == 78){
+		       	// user has pressed n
+		       	FDR.viewModel.moveNextEntry();
+		   	}
+		   	if(e.keyCode == 66){
+		       	// user has pressed b
+		       	FDR.viewModel.movePrevEntry();
+		   	}
 				if(e.keyCode == 82){
 			       	// user has pressed r
 			       	FDR.viewModel.refreshFeeds();
@@ -167,6 +171,20 @@ FDR.viewModel = function(){
 		if (!next)
 			self.feedEntries()[0]().toggleView();
 	
+	}
+  
+	self.movePrevEntry = function(){
+		var back = false;
+		$.each(self.feedEntries(),function(index,item){
+			if (item().viewState() === 2){
+				if (back !== false){
+				    back.toggleView();
+				}
+        return false;
+			} else {
+			  back = item();
+			}
+		});
 	}
 	
 	
